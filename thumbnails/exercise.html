@@ -2,7 +2,39 @@
 <html lang="en">
 
 <head>
+
+ 
   <style>
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.text-box {
+  font-size: 18px;
+  border: none;
+  width: 300px;
+  vertical-align: middle;
+}
+
+.tweet-button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
 
   .URL {
     font-family: 'arial';
@@ -14,15 +46,286 @@
     border-radius: 20px;
     border-style: solid;
     border-width: 0.9;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    width: 300px;
+    margin-top: 10px;
+    display: block;
   }
+
+  .name {
+    display: block;
+    margin-bottom: 4px;
+    padding: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.9px;
+    width: 120px;
+    
+  }
+  .img {
+    width: 200px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    display: block;
+    
+  }
+
+  .first {
+    display: inline-block;
+    width: 100px;
+    margin-top: 0px;
+    height: 25px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.726);
+    border-width: 0.8px;
+    color: rgba(0, 0, 0, 0.616);
+    padding-left: 10px;
+  }
+
+  .mail {
+    display: block;
+    margin-top: 10px;
+    width: 218px;
+    height: 25px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.726);
+    border-width: 0.8px;
+    padding-left: 10px;
+
+  
+
+  }
+
+  .up {
+    display: block;
+    margin-top: 10px;
+    width: 230px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.726);
+    border-width: 0;
+    padding-left: 10px;
+    background-color: rgb(3, 3, 70);
+    color: white;
+
+    transition: 0.15s;
+
+  }
+.up:hover {
+  background-color: blue;
+}
+
+.up:active {
+  box-shadow: 0 0 8px black;
+}
+
+.now {
+  font-family: arial;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.enter {
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+  background-color: rgb(214, 212, 212);
+  font-size: 6px;
+  width: 230px;
+  height: 20px;
+  padding-left: 10px;
+}
+
+.later,
+.request {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-width: 0.2;
+ padding: 5px;
+  font-size: 6px;
+  border: none;
+
+  
+}
+
+.later {
+  background-color: rgb(214, 212, 212);
+  
+
+}
+
+.request {
+  background-color: black;
+  color: white;
+  margin-right: 10px
+}
+
+::placeholder {
+  color: black;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 0px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: inline-block;
+  border-color: black;
+  background-color: white;
+  border-width: 10px;
+  border: 10px;
+  vertical-align: top;
+  height: 110px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 0 5px black;
+}
+
+.twit {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px black;
+
+}
+
+.profile {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.mutual-friends {
+  color: rgb(100, 100, 100);
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
+
+.add-friend-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+ 
+ }
 </style>
 
   <title>exercise</title>
 </head>
 
 <body>
+ 
+  <img class="img" src="Google_2015_logo.svg.png">
+  
   <input class="URL" type="text" 
   placeholder="search google or type a URL">
+
+  <input class="name" type="text" 
+  placeholder="Name">
+  <input class="name" type="text"
+  placeholder="Email">
+
+  
+
+  <p class="now">
+    Request a ride now 
+  </p>
+
+  <input class="enter" type="text"
+  placeholder="Enter pickup location">
+
+  <input class="enter" type="text"
+  placeholder="Enter destination">
+
+  <button class="request">
+    Request now 
+  </button>
+
+  <button class="later">
+    Schedule for later
+  </button>
+
+  <div class="example">
+    im hades dev
+  </div>
+
+  <div class="box"></div>
+
+  <div class="form">
+    <input class="first" type="text" 
+    placeholder="First name">
+  
+    <input class="first" type="text" 
+    placeholder="Last name">
+  
+    <input class="mail" type="text"
+    placeholder="Email">
+  
+    <button class="up">Sign Up</button>
+  </div>
+<p></p>
+  <div class="twit">
+    <img class="profile-picture" src="hqdefault.jpg">
+    <input type="text" class="text-box" 
+    placeholder="What's happening?">
+    <button class="tweet-button">
+      Tweet
+      </button>
+  </div>
+<p></p>
+<div class="profile">
+  <img class="profile-picture" src="hqdefault (1).jpg">
+  <p class="name">
+    Josh
+  </p>
+  <p class="mutual-friends">
+    2 mutual friends
+  </p>
+  <button class="add-friend-button">
+    Add Friend
+  </button>
+</div>
+
+
+
+
+
 </body>
 
 </html>

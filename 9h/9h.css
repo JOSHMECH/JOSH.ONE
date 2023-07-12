@@ -1,0 +1,49 @@
+.img {
+  width: 200px;
+  margin-bottom: 0px;
+ 
+  margin-top: 20px;
+  
+  
+}
+
+.URL {
+  font-family: 'arial';
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  border-style: solid;
+    margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  width: 400px;
+  height: 30px;
+  margin-top: 10px;
+ 
+}
+
+.nineh,
+.go,
+.by,
+.DEY {
+text-align: center;
+}
+
+.DEY {
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 50px;
+}
+.google {
+  background-color: rgb(204, 202, 202);
+  border: none;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
