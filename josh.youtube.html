@@ -34,6 +34,11 @@
     display: block;
     margin-bottom: 10px;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
   .title {
     width: 250px;
     font-weight: bold;
@@ -60,10 +65,8 @@
   width: 50px;
   vertical-align: top;
 }
-.info {
-  display: inline-block;
-  width: 200px;
-}
+
+
 .views {
   font-size: 12px;
   margin-top: 5px;
@@ -88,7 +91,7 @@
     <img class="img" src="thumbnails/hq720.avif">
   </div>
   
-  <div>
+  <div class="grid">
     <div class="profile">
       <img class="pp" src="thumbnails/channel-1.jpeg">
     </div>
@@ -114,7 +117,7 @@
     <img class="img" src="thumbnails/hq720 (1).jpg">
   </div>
 
-  <div>
+  <div class="grid">
     <div class="profile">
       <img class="pp" src="thumbnails/channel-2.jpeg">
     </div>
