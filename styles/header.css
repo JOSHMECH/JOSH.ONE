@@ -1,0 +1,56 @@
+.search {
+    
+}
+.header {
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  
+  
+}
+
+.middle {
+display: flex;
+flex: 1;
+margin-left: 70px;
+margin-right: 35px ;
+max-width: 500px;
+align-items: center;
+
+}
+
+.right {
+  width: 200px;
+}
+
+.ham {
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.youtube {
+  height: 20px;
+}
+
+.voice {
+  height: 20px;
+}
+
+.icon {
+  height: 20px;
+}
+
+.noti {
+  height: 20px;
+}
+
+.search {
+  height: 20px;
+  flex: 1
+}
