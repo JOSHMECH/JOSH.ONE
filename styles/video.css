@@ -4,6 +4,10 @@
   
 }
 
+.row {
+  position: relative;
+}
+
 
 .grid {
   display: grid;
@@ -55,4 +59,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 15px;
+}
+
+.time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  padding: 5px;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 3px;
 }
