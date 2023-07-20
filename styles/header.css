@@ -85,6 +85,38 @@
   border-style: solid;
   border-width: 1px;
   border-color: gray;
+  cursor: pointer;
+
+  
+}
+
+.search-button,
+.voice-button {
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -50;
+  top: 40px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .search-icon {
@@ -99,6 +131,10 @@
   border: none;
   background-color: 
   rgb(233, 230, 230);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .voice {
@@ -108,6 +144,28 @@
   rgb(233, 230, 230);
 }
 
+.voice-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -50;
+  top: 50px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  
+}
+
+.voice-button:hover .tooltip {
+  opacity: 1;
+}
 .right {
   width: 180px;
   display: flex;
@@ -118,14 +176,17 @@
 
 .upload {
   height: 25px;
+  cursor: pointer;
 }
 
 .apps {
   height: 25px;
+  cursor: pointer;
 }
 
 .noti {
   height: 25px;
+  cursor: pointer;
 }
 
 .noti-no {
