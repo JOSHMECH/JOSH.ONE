@@ -91,11 +91,19 @@
 }
 
 .search-button,
-.voice-button {
+.voice-button,
+.upload-container,
+.noti-no,
+.apps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-.search-button .tooltip {
+.search-button .tooltip,
+.upload-container .tooltip,
+.apps-container .tooltip {
   position: absolute;
   background-color: gray;
   color: white;
@@ -107,15 +115,16 @@
   font-size: 12px;
   bottom: -50;
   top: 40px;
-  left: 0;
-  right: 0;
   opacity: 0;
   transition: opacity 0.15s;
   pointer-events: none;
+  white-space: nowrap;
   
 }
 
-.search-button:hover .tooltip {
+.search-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps-container:hover .tooltip {
   opacity: 1;
 }
 
@@ -144,7 +153,8 @@
   rgb(233, 230, 230);
 }
 
-.voice-button .tooltip {
+.voice-button .tooltip,
+.noti-no .tooltip {
   position: absolute;
   background-color: gray;
   color: white;
@@ -155,7 +165,7 @@
   border-radius: 3px;
   font-size: 12px;
   bottom: -50;
-  top: 50px;
+  top: 40px;
   opacity: 0;
   white-space: nowrap;
   transition: opacity 0.15s;
@@ -163,9 +173,10 @@
   
 }
 
-.voice-button:hover .tooltip {
+.voice-button:hover .tooltip,
+.noti-no:hover .tooltip {
   opacity: 1;
-}
+} 
 .right {
   width: 180px;
   display: flex;
